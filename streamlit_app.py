@@ -17,7 +17,7 @@ def main():
     csv_url = "https://github.com/Clinton-William/gdp-dashboard/blob/main/data/high_correlation_pairs.csv"
     
     # Read the CSV file directly from GitHub
-    df = pd.read_csv(csv_url, index_col=0, error_bad_lines=False, encoding='utf-8')
+    df = pd.read_csv(csv_url, index_col=0, on_bad_lines='skip', encoding='utf-8')
     
     # Display the DataFrame
     st.write("Data Preview:")
