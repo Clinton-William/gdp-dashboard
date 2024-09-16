@@ -14,7 +14,7 @@ def main():
     st.title("Stock Correlation Heatmap Viewer")
 
     # URL to your CSV file on GitHub
-    csv_url = "https://raw.githubusercontent.com/Clinton-William/gdp-dashboard/data/corelation.csv"
+    csv_url = "https://raw.githubusercontent.com/Clinton-William/gdp-dashboard/data/high_correlation_pairs.csv"
     
     # Read the CSV file directly from GitHub
     df = pd.read_csv(csv_url, index_col=0)
